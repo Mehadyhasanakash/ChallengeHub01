@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+
+:root {
+    --primary-color: hsl(35, 77%, 62%);
+    --primary-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+
+
+/* header style line */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    padding: 0.5rem 3rem;
+
+}
+
+.logo a {
+    font-size: 3.3rem;
+    color: hsl(240, 100%, 5%);
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navebar-list {
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+
+}
+
+.navbar-item {
+
+    color: hsl(240, 100%, 5%);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.navbar-item:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.icon-item{
+    display: none;
+}
+
+icon-item  [name='close'] {
+    display: none;
+}
+
+
+
+/* reuseable code */
+
+section{
+    padding:  9.6rem 0;
+}
+
+.grid{
+    display: grid;
+    gap: 9.6rem;
+}
+.grid-two-column{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* header style line end */
+
+/* main hero-section */
+.img-section img{
+    width: 100%;
+}
