@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
-
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700;800&display=swap');
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    
 
 
 }
@@ -30,74 +29,92 @@ html {
 /* header style line */
 
 .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/banner.png);
+    background-position: center ;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
     display: flex;
     justify-content: space-between;
+    padding: 2% 6%;
     align-items: center;
-    height: 9rem;
-    padding: 0.5rem 3rem;
-
 }
 
-.logo a {
-    font-size: 3.3rem;
-    color: hsl(240, 100%, 5%);
-    font-weight: 900;
+nav img{
+    width: 200px;
 }
 
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-.navebar-list {
+.nav-links ul {
     display: flex;
-    gap: 2rem;
+    gap: 30px;
+}
+.nav-links ul li{
+    position: relative;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--primary-red);
+    margin: auto ;
+    display: block;
+    transition: 0.5s;
+}
+.nav-links ul li:hover ::after{
+    width: 100%;
+   
+}
+
+.tex-box{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 10%;
+
+}
+
+.tex-box h1{
+    font-size: 65px;
+}
+.tex-box p{
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.hero-btn{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
-
+    padding: 10px 20px;
+    border: 1px solid white;
+    background: transparent;
+}
+.hero-btn:hover{
+    background: var(--primary-red);
+    border: 1px solid var(--primary-red);
+    transition: 1s;
 }
 
-.navbar-item {
-
-    color: hsl(240, 100%, 5%);
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.navbar-item:hover {
-    color: hsl(35, 77%, 62%);
-}
-
-.icon-item{
-    display: none;
-}
-
-icon-item  [name='close'] {
-    display: none;
-}
 
 
 
 /* reuseable code */
 
-section{
-    padding:  9.6rem 0;
-}
-
-.grid{
-    display: grid;
-    gap: 9.6rem;
-}
-.grid-two-column{
-    grid-template-columns: repeat(2, 1fr);
-}
-
-
-/* header style line end */
-
-/* main hero-section */
-.img-section img{
-    width: 100%;
-}
